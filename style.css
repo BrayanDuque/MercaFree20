@@ -1,0 +1,442 @@
+:root{
+    --fondo : #07BBFF;
+    --grisBlanco: #A9ACA8;
+    --color-btn:  #48F017;
+}
+body{
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+.navbar{
+    background-color: var(--fondo);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+}
+.navbar div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+/* ---------------carrito de compras ----------- */
+.carritoCompras{
+    cursor: pointer;
+}
+/* .carritoCompras span{
+    background-color: white;
+    border-radius: 100%;
+    font-size: 14px;
+    width: 10px;
+    position: absolute;
+    top: 6px;
+    font-weight: 700;
+    text-align: center;
+    right: 175px;
+} */
+
+
+
+/* ------------------Menu de opciones ---------------- */
+.optionesMenuPrincipal{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+.optionMenu{
+    position: absolute;
+    top: 57px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--fondo);
+    width: 170px;
+    background-color: white;
+}
+
+.optionMenu ul {
+    list-style: none;
+}
+.optionMenu li{
+    padding-bottom: 10px;
+}
+.optionMenu .cerrarSesion{
+    border-top: solid skyblue;
+    padding-top: 15px;
+    width: 80%;
+}
+.optionMenu .cerrarSesion a{
+    color: #0F0A61;
+    font-weight: bolder;
+}
+.optionMenu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+}
+.navbar div ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+.navbar div ul img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* ------------------Menu de opciones ---------------- */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+.Barradebusqueda{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-left: 5px;
+    width: 50% ;
+}
+
+.barraBusqueda{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.logoLupa{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-buscar{
+    width: 30%;
+    height: 38px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--color-btn);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.producto{
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+.cards p{
+    font-weight: bold;
+}
+.precio{
+    color: var(--grisBlanco);
+}
+.comprar{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--color-btn);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* ------------ Pie de pagina ----------- */
+
+.foother{
+    background-color: var(--fondo);
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+}
+.foother ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.foother a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* ____________ LOGIN ______________________ */
+
+.container-login{
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    place-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.titulo{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 14px;
+    font-weight: 300px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: bisque;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 14px;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.button-submit{
+    background-color:  #48F017;
+    border-radius: 8px;
+    border: none;
+    color: beige;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+}
+.button-submit a{
+    text-decoration: none;
+    font-size: 14px;
+    color: beige;
+    font-weight: bold;
+    width: 100%;
+}
+.form-button{
+    margin-top: 14px;
+    margin-bottom: 25px;
+}
+.recuperar-contraseña{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+.registrarse{
+    text-decoration: none;
+    color: black;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* -----------Clases mobile---------- */
+.mobile-container{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--fondo);
+    width: 100%;
+    align-items: baseline;
+}
+.mobile-container h2{
+    text-align: center;
+    padding-left: 20px;
+}
+.mobile-container ul li {
+    list-style: none;
+    font-weight:bolder;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.mobile-container ul li a {
+    text-decoration: none;
+    font-weight:bolder;
+    cursor: pointer;
+    color: black;
+}
+.mobile-container span{
+    color: var(--grisBlanco);
+    margin-top: 10px;
+    font-weight: bolder;
+    color: #0F0A61;
+    padding: 10px 35px;
+}
+
+ /* clases de ayuda o utiles */
+ .inactive{
+    display: none;
+ }
+
+/* ----------- orden carrito compras ---------------- */
+.myorder{
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 20px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    /* position: absolute; */
+
+}
+.container-order{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: white
+}
+.order-content{
+    display: flex;
+    flex-direction: column;
+
+}
+.order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color:blanchedalmond;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 0 24px;
+}
+.order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.order p span:nth-child(1){
+    font-size: 14px;
+    font-weight: bold;
+}
+.order p span:nth-child(2){
+    color: darkgray;
+    font-size: 12px;
+}
+.order p:nth-child(2){
+    text-align: end;
+    font-weight: 500;
+}
+.articulos-cart{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.articulos-cart figure{
+    margin: 0;
+}
+.articulos-cart figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.articulos-cart p:nth-child(2){
+    color: darkgray;
+}
+.articulos-cart p:nth-child(3){
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sumaTotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+ /* -------- Medias querys ------ */
+
+@media (max-width: 640px) {
+    .navbar div ul:nth-child(1){
+        display: none;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+    .navbar div {
+        cursor: pointer;
+    }
+
+    .navbar{
+        justify-content: flex-start;
+    }
+    .optionMenu{
+        display: none;
+    }
+    .Barradebusqueda {
+        width: 80%;
+    }
+}
+
+@media (min-width: 641px) {
+    .mobile-container{
+        display: none;
+    }
+
+}
